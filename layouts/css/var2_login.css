@@ -1,0 +1,133 @@
+body {
+	font-family: "Helvetica", "Arial", san-serif;
+	background-color: #868686;
+}
+
+.menu {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+	width: 90%;
+	max-width: 425px;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #ffffff;
+	border-radius: 10px;
+	padding-bottom: 30px;
+}
+
+.center {
+	text-align: center;
+	margin: 0px auto;
+}
+
+.menu__login__text {
+	margin-top: 12px;
+	margin-bottom: 12px;
+	font-size: 28px;
+}
+
+.menu__input, .menu__input__email, .menu__input__pass {
+	border-radius: 8px;
+	outline: none;
+	padding: 14px;
+}
+
+.menu__input {
+	margin: 4px;
+	text-align: center;
+	color: white;
+	width: 90%;
+	font-size: 16px;
+}
+
+.menu__input__email {
+	margin: 12px;
+	margin-top: 4px;
+	text-align: left;
+	width: 83%;
+	font-size: 14px;
+	color: black;
+	border: 1px solid #9b9b9b;
+}
+
+.menu__input__pass {
+	margin: 12px;
+	margin-bottom: 0px;
+	text-align: left;
+	width: 82.8%;
+	font-size: 14px;
+	color: black;
+	border: 1px solid #9b9b9b;
+}
+
+.menu__relative {
+	position: relative;
+}
+
+.menu__input__image {
+    position: absolute;
+    top: 12%;
+    right: 2%;
+    height: 100%;
+    padding: 18px;
+    box-sizing: border-box;
+    margin-right: 10px;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.line {
+    display: block;
+    margin-bottom: 32px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 32px;
+    overflow: hidden;
+    text-align: center;
+    white-space: nowrap;
+	width: 90%;
+	color: #9b9b9b;
+	font-size: 14px;
+}
+
+.line__text {
+    display: inline-block;
+    position: relative;
+}
+
+.line__text::after, .line__text::before {
+	position: absolute;
+	top: 50%;
+	height: 1px;
+	content: "";
+	width: 99999px;
+	background: #ccd0d5;
+	overflow: hidden;
+}
+
+.line__text::after {
+	right: 100%;
+	margin-right: 4px;
+}
+
+.line__text::before {
+	left: 100%;
+	margin-left: 4px;
+}
+
+input:invalid {
+  border: 1.3px solid red;
+}
+
+.menu__input__invalid-text {
+	position: relative;
+	text-align: left;
+	font-size: 12px;
+	margin-top: 4px;
+	left: 5%;
+	color: red;
+}

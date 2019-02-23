@@ -1,0 +1,130 @@
+body {
+	overflow: hidden;
+	font-family: "Helvetica", "Arial", san-serif;
+}
+
+/* Pop-up elements */
+@media screen and (min-width: 500px) {
+	#grid {
+		display: grid;
+		grid-template-columns: 27% 73%;
+		grid-template-rows: 100%;
+		height: 100vh;
+	}
+
+	#pop-up {
+		grid-column-start: 1;
+		grid-row-start: 1;
+	}
+
+	.pop-up {
+		box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+	}
+
+	.pop-up__logo {
+		width: 100%;
+		background: #1164f5;
+
+		overflow: hidden;
+		margin-bottom: 25%;
+	}
+
+	.pop-up__logo__img {
+		margin-top: 15px;
+		margin-bottom: 10px;
+		margin-left: 10px;
+		overflow: hidden;
+	}
+
+	.center {
+		text-align: center;
+		margin: 0px auto;
+	}
+
+	.pop-up__button, .pop-up__button__auth {
+		width: 93%;
+		padding: 4%;
+		outline: none;
+		font-size: 15px;
+		margin-bottom: 7.5%;
+		font-weight: bold;
+	} 
+
+	.pop-up__button {
+		border: 1px solid #dbdbdb;
+		box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	}
+
+	.pop-up__button__auth {
+		color: white;
+		border: none;
+		box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+	}
+
+	.pop-up__button__img {
+		padding-right: 5px;
+	}
+
+	.pop-up__button__auth__img {
+		padding-right: 5px;
+		filter: invert(1);
+	}
+
+	.pop-up__about {
+		text-decoration: none;
+		color: #1164f5;
+	}
+
+	/* Auth-menu elements */
+
+	.auth-menu {
+		position: absolute;
+		top: 48%;
+		left: 60%;
+		width: 35%;
+		transform: translate(-50%, -50%);
+	}
+
+	.auth-menu__main {
+		font-size: 30px;
+	}
+
+	.relative {
+		position: relative;
+	}
+
+	.auth-menu__input {
+		width: 85%;
+		padding: 16px;
+		font-size: 16px;
+		border: 1px solid #dbdbdb;
+		border-radius: 2px;
+		margin-bottom: 20px;
+	}
+
+	.auth-menu__input__image {
+	    position: absolute;
+
+	    right: 10%;
+	    height: 75%;
+	    box-sizing: border-box;
+	    background: none;
+	    border: none;
+	    outline: none;
+	}
+
+	.auth-menu__input__submit {
+		width: 50%;
+		padding: 7px;
+		background: #1164f5;
+		color: white;
+		font-size: 16px;
+	}
+
+	.auth-menu__input__submit__img {
+		margin-right: 6px;
+		filter: invert(1);
+	}
+}
+
+

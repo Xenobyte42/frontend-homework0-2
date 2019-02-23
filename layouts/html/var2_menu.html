@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>SecondHW</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../css/var2_menu.css">
+		<link rel="stylesheet" href="../css/var2_menu_mobile.css">
+	</head>
+
+	<body>
+		<div id="grid">
+			<div id="auth-menu" class="auth-menu">
+				<p class="auth-menu__main">Авторизуйтесь на сервисе</p>
+				<form method="POST">
+					<input type="text" placeholder="Email" class="auth-menu__input" name="email">
+					<div class="relative">
+						<button class="auth-menu__input__image"><img src="../img/icons/actions/show.svg"></button>
+						<input type="password" class="auth-menu__input" name="pass" placeholder="Пароль" />
+					</div>
+
+					<button type="submit" class="auth-menu__input__submit">
+						<img src="../img/icons/logotypes/mailru.svg" class="auth-menu__input__submit__img">
+						Войти через почту
+					</button>
+				</form>
+			</div>
+
+			<div id="pop-up" class="pop-up">
+				<div class="pop-up__logo">
+					<img src="../img/logo.svg" class="pop-up__logo__img">
+				</div>
+				<div class="center">
+					<button type="button" class="pop-up__button__auth" name="auth" style="background-color: #1164f5;">
+						<img class="pop-up__button__auth__img" src="../img/icons/actions/sign_in.svg">
+						Авторизация
+					</button>
+
+					<button type="button" class="pop-up__button" name="auth">
+						<img class="pop-up__button__img" src="../img/icons/categories/access.svg">
+						Регистрация
+					</button>
+					<button type="button" class="pop-up__button" name="auth">
+						<img class="pop-up__button__img" src="../img/icons/navigation/users.svg">
+						Авторы
+					</button>
+					<button type="button" class="pop-up__button" name="auth">
+						<img class="pop-up__button__img" src="../img/icons/categories/game1.svg">
+						Играть
+					</button>
+					<div>
+						<a href="" class="pop-up__about">О проекте</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

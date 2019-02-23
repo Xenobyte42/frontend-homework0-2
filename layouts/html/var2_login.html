@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<title>SecondHW</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../css/var2_login.css">
+	</head>
+
+	<body>
+		<div class="menu">
+			<div class="center">
+				<p class="menu__login__text">Логин</p>
+			
+				<button type="button" class="menu__input" name="login_vk" style="background-color: #4877a9;">
+					<img src="../img/icons/social/vk.svg" hspace=10 style="filter: invert(1);">
+					Войти через Вконтакте
+				</button>
+				<button type="button" class="menu__input" name="login_fb" style="background-color: #385899;">
+					<img src="../img/icons/social/fb.svg" hspace=10 style="filter: invert(1);">
+					Войти через Facebook
+				</button>
+
+				<div class="line">
+					<span class="line__text">
+						или
+					</span>
+				</div>
+				<form action="POST">
+					<input type="text" class="menu__input__email" placeholder="Email" name="email" />
+					<div class="menu__relative">
+						<input type="password" class="menu__input__pass" name="pass" placeholder="Пароль" required />
+						<button class="menu__input__image"><img src="../img/icons/actions/show.svg"></button>
+					</div>
+					<p class="menu__input__invalid-text">Введите пароль</p>
+
+					<button type="submit" class="menu__input" style="background-color: #1164f5;">
+						<img src="../img/icons/logotypes/mailru.svg" hspace=10 style="filter: invert(1);">
+						Войти через почту
+					</button>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

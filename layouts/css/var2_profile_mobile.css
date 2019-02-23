@@ -1,0 +1,13 @@
+@media screen and (max-width: 500px) {
+	/* Profile grid */
+
+	#grid-menu {
+		display: grid;
+		grid-template-columns: 100%;
+		height: 100vh;
+	}
+
+	#profile-menu {
+		grid-column-start: 1;
+	}
+}
